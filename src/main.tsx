@@ -8,9 +8,8 @@ import {UserLogin} from "./pages/UserLogin.tsx";
 import {PageNotFound} from "./pages/PageNotFound.tsx";
 import {PrivateRoute} from "./utils/Route.tsx";
 import {Home} from "./pages/Home.tsx";
-import {PageAbout} from "./pages/PageAbout.tsx";
-import {PageContactezNous} from "./pages/PageContactezNous.tsx";
 import {MesuresCapteur} from "./pages/MesuresCapteur.tsx";
+import {PageMap} from "./pages/PageMap.tsx";
 
 
 const router = createBrowserRouter([
@@ -24,8 +23,7 @@ const router = createBrowserRouter([
                 element: <PrivateRoute/>,
                 children:[
                     {path:"/home", element:<Home/>},
-                    {path:"/about", element:<PageAbout/>},
-                    {path:"/contact", element:<PageContactezNous/>},
+                    {path:"/PageMap", element:<PageMap/>},
                     {path:"/MesureCapteur", element:<MesuresCapteur/>},
                 ]
             }

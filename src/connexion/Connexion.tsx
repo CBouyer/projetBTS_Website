@@ -48,16 +48,18 @@ export const Connexion = () => {
 
     const setMessageColor = (message: string) => {
         if (message.includes(`⚙️`)) {
-            return 'success';
+            return 'black';
         } else if (message.includes(`⛓️‍💥`)) {
-            return 'error';
+            return 'black';
         }
         return 'text.secondary';
     };
 
     return (
             <div className="login">
-                <h2>Se Connecter</h2>
+                <h2 style={{
+                    color:"black"
+                }}>Se Connecter</h2>
                 <p style={{ fontWeight: "bold", color: setMessageColor(message) }}>{message}</p>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="inputBx">
